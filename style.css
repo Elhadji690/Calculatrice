@@ -1,0 +1,90 @@
+body {
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+.container {
+   width: 300px; 
+  min-height: 450px;
+  margin: 80px auto;
+  padding: 50px;
+  border: solid #f5f5f5 ;
+  display: grid;
+  place-items: center;
+  border-radius: 20px;
+  box-shadow: 4px 4px 10px 1px black;
+  color:#f5f5f5;
+  text-align: center;
+  
+}
+
+@keyframes apparitionTitre {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+h1 {
+  color: rgba(116, 111, 111, 0.914);
+  
+  font-family:  Arial, sans-serif;
+  text-align: center;
+  animation: apparitionTitre 2s ease-out forwards;
+}
+
+.element {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+}
+#operation {
+  display: flex;
+  justify-content: center;
+  border: solid 1px blue;
+}
+.buton {
+  text-align: center;
+  margin-top: 25px;
+}
+button {
+  color: white;
+  background-color: blue;
+  border-radius: 5px;
+  border: solid 1px;
+  cursor: pointer;
+  padding: 12px 24px;
+  font-size: 12px;
+}
+button:hover {
+  background-color: rgb(246, 245, 244);
+  color: blue;
+}
+
+label {
+  /* font-weight: bold; */
+  color: rgba(116, 111, 111, 0.914);
+  
+}
+input,
+select {
+  padding: 10px;
+  border: solid 1px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f5f5f5;
+  border: solid 1px blue;
+  color: blue;
+  text-align: center;
+}
+#resultat {
+  margin-top: 10px;
+  background-color: #f5f5f5;
+  color: blue;
+  display: flex;
+  text-align: center;
+}

@@ -1,0 +1,97 @@
+Objectif du programme
+Notre objectif est de créer une mini calculatrice qui va nous permettre de calculer les opérations  que ça  soit l'addition, la soustraction, la multiplication et la division . Mais dans notre programme nous allons aborder le cas de la division par zéro.
+Les entrées
+
+Le programme va recevoir le premier nombre, le deuxième nombre et les opérations( +;-;*;/)
+TRAITEMENT
+Récupération du premier nombre;
+Récupération du second nombre 
+Choisir une opération
+Si l'opération est une somme ; on additionne les deux nombres.
+Si l'opération est une différence; on soustrait les deux nombres.
+Si l'opération est un produit; on multiplie les deux nombres .
+Si l'opération est une division; on divise les deux nombres sauf si le deuxième nombre est 0, dans ce la division est impossible. 
+LES Sorties
+On doit afficher le résultat du calcul effectué ou un message(la division est impossible) si on divise par 0
+Variables
+Parmi les variables nous aurons:
+nombre_1
+nombre_2
+opération
+résultat
+
+
+Algorithme Calculatrice
+Variables : nombre_1 , nombre_ 2 : réel
+ Opération: chaine
+résultat: réel
+Début 
+écrire ("veuillez saisir le premier nombre")
+lire(nombre_1)
+écrire ("veuillez saisir le second nombre")
+lire(nombre_2)
+
+écrire( " veuillez choisir un opération")
+lire (opération)
+si opération = "somme" alors
+résultat<- nombre_1 + nombre_2
+écrire ("le résultat est " , résultat)
+
+sinon si opération = "différence" alors
+résultat<- nombre_1 - nombre_2
+écrire ("le résultat est " , résultat)
+
+sinon si opération = "produit" alors
+résultat<- nombre_1 * nombre_2
+écrire ("le résultat est " , résultat)
+
+sinon si opération = "division" alors
+si nombre_2 = 0
+alors 
+écrire(" la division est impossible ")
+sinon 
+résultat<- nombre_1 / nombre_2
+écrire ("le résultat est " , résultat)
+
+Fin Si
+Fin si
+ 
+Fin 
+
+Exemples d'exécution
+
+
+nombre_1: 10
+nombre_2: 5
+opération: +
+résultat:
+
+
+nombre_1: 10
+nombre_2: 5
+opération: -
+résultat: 5
+
+
+
+nombre_1: 10
+nombre_2: 5
+opération: *
+résultat: 50
+
+
+nombre_1: 10
+nombre_2: 5
+opération: /
+résultat: 2
+
+
+nombre_1: 10
+nombre_2: 0
+opération: /
+résultat: "la division est impossible" 
+
+
+
+
+ 
